@@ -1,0 +1,218 @@
+/* https://coolors.co/palette/000000-14213d-fca311-e5e5e5-ffffff */
+:root {
+    --primary-color: #14213D;
+    --secondary-color: #FCA311;
+    --accent-color: #E5E5E5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.card {
+    border: 1px solid var(--accent-color);
+    border-radius: 0.5em;
+    box-shadow: 10px 10px 50px var(--accent-color);
+    margin-bottom: 10px;
+}
+
+.card-title {
+    background-color: var(--primary-color);
+    border-radius: 0.5em;
+    padding: 1em;
+    color: #fff;
+}
+
+.card-body {
+    padding: 1em;
+}
+
+.btn {
+    border-radius: 0.5em;
+}
+
+p {
+    text-align: justify;
+}
+
+/*==============  header styling ==============*/
+header {
+    position: relative;
+    min-width: 100%;
+}
+
+.top-header {
+    background-color: var(--primary-color);
+    padding: 1em;
+    color: #fff;
+
+    display: flex;
+    justify-content: center;
+}
+
+.top-header img {
+    width: 80px;
+    height: 80px;
+}
+
+.top-header h1 {
+    margin-left: 10px;
+}
+
+/* ------- hamburger ---------*/
+#menu::before {
+    content: "☰";
+}
+
+#menu {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 2rem;
+    color: #fff;
+}
+
+.open a {
+    display: block;
+}
+
+#menu.open::before {
+    content: "X";
+}
+
+/* ------- main menu ---------*/
+nav {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--accent-color);
+}
+
+nav a {
+    display: none;
+    text-align: center;
+    padding: 10px;
+    color: #000;
+}
+
+nav a.active,
+nav a:hover {
+    background-color: #FCA311;
+}
+
+/*==============  main styling ==============*/
+main {
+    padding: 1em;
+}
+
+/* ------- block 1 ---------*/
+
+.block1 .card-body ul li::before {
+    content: "✅";
+}
+
+.block1 .card-body img {
+    display: block;
+    width: 200px;
+    height: auto;
+    margin: 0 auto;
+}
+
+/* ------- block 2 ---------*/
+.block2 .subjects {
+    display: flex;
+    gap: 5px;
+    justify-content: space-evenly;
+
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+}
+
+.btn-subject {
+    background-color: #000;
+    padding: 0.2rem 2rem;
+
+    display: inline-block;
+    font-size: 16px;
+    color: #fff;
+}
+
+/*         course ---------*/
+.courses {
+    border: 1px solid var(--primary-color);
+    border-radius: 0.5em;
+    margin-bottom: 1em;
+}
+
+.courses-header {
+    padding: 1em;
+    color: #000;
+}
+
+.btn-course {
+    background-color: var(--secondary-color);
+    padding: 0.5rem 2rem;
+    display: block;
+    width: 100%;
+}
+
+.course-description {
+    padding: 0 1em;
+}
+
+.course-description h3 {
+    color: var(--primary-color);
+}
+
+.course-description .credit {
+    color: var(--primqry-color);
+    padding-bottom: 1em;
+}
+
+.course-description .credit>span {
+    font-weight: bold;
+}
+
+.course-description .desc {
+    padding-bottom: 1em;
+}
+
+.course-description .tech {
+    padding: 0.5em;
+    border-top: 2px solid var(--accent-color);
+
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.course-description .tech ul li::before {
+    content: "✓";
+    margin-right: 5px;
+}
+
+/*==============  footer styling ==============*/
+footer {
+    background-color: var(--secondary-color);
+    padding: 1.5em;
+
+    font-size: 14px;
+    color: #000;
+}
+
+footer p {
+    text-align: center;
+}
