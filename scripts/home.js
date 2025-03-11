@@ -229,7 +229,7 @@ function buildCardCertficateList() {
         let courses = coursesByCertificate[certificate];
 
         //create card element container
-        const card = document.createElement('div');
+        const card = document.createElement('section');
         card.classList.add('card');
 
         //Compute total credit
