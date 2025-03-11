@@ -63,6 +63,7 @@ header {
 
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .top-header img {
@@ -70,8 +71,10 @@ header {
     height: 80px;
 }
 
-.top-header h1 {
+.top-header span {
+    display: block;
     margin-left: 10px;
+    font-size: 2em;
 }
 
 /* ------- hamburger ---------*/
@@ -119,10 +122,10 @@ main {
     padding: 1em;
 }
 
-main>p {
+main>h1 {
     color: var(--primary-color);
     font-size: 1.5rem;
-    padding: 1em 0;
+    font-weight: 400;
 }
 
 /* ------- block 1 ---------*/
