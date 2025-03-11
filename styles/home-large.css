@@ -1,0 +1,52 @@
+@media screen and (min-width: 750px) {
+
+    /*==============  header styling ==============*/
+    #menu {
+        display: none;
+    }
+
+    nav {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    nav a,
+    nav li {
+        display: inline-block;
+        min-width: 150px;
+    }
+
+    nav a {
+        padding: 15px;
+    }
+
+    /*==============  main styling ==============*/
+
+    main {
+        padding: 2em 3em;
+    }
+
+    main .block1 {
+        display: grid;
+        grid-template-columns: 1fr 650px;
+        gap: 10px;
+        margin-bottom: 2em;
+    }
+
+    .block2 .subject-nav {
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .btn-subject {
+        min-width: 150px;
+    }
+
+    .subject-courses {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+
+        padding: 2em;
+    }
+}
