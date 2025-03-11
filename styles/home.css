@@ -30,7 +30,7 @@ ul {
     margin-bottom: 10px;
 }
 
-.card-title {
+.card-header {
     background-color: var(--primary-color);
     border-radius: 0.5em;
     padding: 1em;
@@ -132,7 +132,7 @@ main {
 }
 
 /* ------- block 2 ---------*/
-.block2 .subjects {
+.block2 .subject-nav {
     display: flex;
     gap: 5px;
     justify-content: space-evenly;
@@ -151,30 +151,49 @@ main {
     color: #fff;
 }
 
+.totalCredit {
+    text-align: end;
+    padding-top: 1em;
+}
+
 /*         course ---------*/
-.courses {
+.course {
     border: 1px solid var(--primary-color);
     border-radius: 0.5em;
     margin-bottom: 1em;
 }
 
-.courses-header {
-    padding: 1em;
+.course-header {
     color: #000;
 }
 
 .btn-course {
     background-color: var(--secondary-color);
+    border: 1px solid var(--primary-color);
     padding: 0.5rem 2rem;
     display: block;
     width: 100%;
 }
 
+.complete {
+    background-color: var(--secondary-color);
+}
+
+.not-complete {
+    background-color: var(--accent-color);
+}
+
 .course-description {
+    display: none;
     padding: 0 1em;
 }
 
+.course-description.visible {
+    display: block;
+}
+
 .course-description h3 {
+    padding-top: 1em;
     color: var(--primary-color);
 }
 
