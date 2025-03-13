@@ -1,0 +1,21 @@
+/* https://coolors.co/palette/03045e-023e8a-0077b6-0096c7-00b4d8-48cae4-90e0ef-ade8f4-caf0f8 */
+
+@media screen and (min-width: 760px) {
+    /*========= MAIN STYLING =============*/
+
+    main {
+        padding: 2rem 5rem;
+    }
+
+
+    #filteredButtons {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 10px;
+    }
+}

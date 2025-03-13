@@ -1,0 +1,84 @@
+/* https://coolors.co/palette/03045e-023e8a-0077b6-0096c7-00b4d8-48cae4-90e0ef-ade8f4-caf0f8 */
+:root {
+    --primary-color: #03045E;
+    --secondary-color: #023E8A;
+    --accent-color1: #90E0EF;
+    --accent-color2: #CAF0F8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/*========= HEADER STYLING =============*/
+header {
+    background-color: var(--primary-color);
+    padding: 1rem;
+}
+
+header h1 {
+    color: #fff;
+    text-align: center;
+}
+
+/*========= MAIN STYLING =============*/
+main {
+    padding: 1rem;
+}
+
+#filteredButtons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    justify-content: center;
+    margin: 1rem;
+}
+
+#filteredButtons button {
+    background-color: var(--secondary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 0.3rem;
+    padding: 0.6rem 3rem;
+
+    display: inline-block;
+    width: 100%;
+
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+}
+
+#cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+}
+
+.card {
+    background-color: var(--accent-color2);
+    border: 1px solid var(--accent-color1);
+    padding: 1rem;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.card .card-body img {
+    display: inline-block;
+    width: 150px;
+    height: auto;
+    padding: 1rem;
+}
+
+/*========= FOOTER STYLING =============*/
+footer {
+    background-color: var(--secondary-color);
+    padding: 1rem;
+    color: #fff;
+}
