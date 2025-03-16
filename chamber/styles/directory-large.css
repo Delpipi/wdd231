@@ -1,0 +1,41 @@
+@media screen and (min-width: 320px) {
+    main {
+        padding: 5rem;
+    }
+
+    main .menu {
+        display: block;
+        background-color: var(--secondary-color);
+        padding: 1rem;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+    }
+
+    .list {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .list .card-body {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        text-align: left;
+    }
+
+    .list .card-body img {
+        width: 100px;
+        height: auto;
+        padding-bottom: 1rem;
+    }
+
+}

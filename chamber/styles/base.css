@@ -1,0 +1,122 @@
+/* https://coolors.co/009e60-f77f00-ffffff-000000 */
+:root {
+    --background-color: #FFFFFF;
+    --primary-color: #F77F00;
+    --secondary-color: #009E60;
+    --accent-color: #E5E5E5;
+    --text-color: #000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/*============ HEADER STYLING ==============*/
+header {
+    position: relative;
+    box-shadow: 1px 10px 5px #eee;
+
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "X";
+}
+
+#menu {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    font-size: 2rem;
+    color: var(--text-color);
+}
+
+header .logo {
+    width: 200px;
+    height: auto;
+    display: inline-block;
+    padding: 1rem;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+}
+
+header nav a {
+    display: none;
+    padding: 10px;
+    text-align: center;
+    color: var(--text-color);
+    border-top: 1px solid var(--accent-color);
+}
+
+.open a {
+    display: block;
+}
+
+header nav a.active,
+header nav a:hover {
+    background-color: var(--primary-color);
+}
+
+#dark-light {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+}
+
+#dark-light img {
+    display: inline-block;
+    width: 35px;
+    height: auto;
+}
+
+/*============ FOOTER STYLING ==============*/
+
+footer {
+    background-color: var(--secondary-color);
+    padding: 1rem;
+    font-size: 14px;
+
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.adress,
+.social-media,
+.info {
+    padding: 0.5rem;
+}
+
+footer .social-media ul {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+footer .social-media img {
+    width: 50px;
+    height: auto;
+}

@@ -1,0 +1,41 @@
+/* https://coolors.co/009e60-f77f00-ffffff-000000 */
+@media screen and (min-width: 320px) {
+
+    /*============ HEADER STYLING ==============*/
+    header {
+        grid-template-columns: 200px 1fr 100px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    header .logo {
+        grid-column: 1/2;
+    }
+
+    header nav {
+        flex-direction: row;
+        justify-content: end;
+        grid-column: 2/3;
+    }
+
+    header nav a,
+    header nav li {
+        display: inline-block;
+        border: none;
+    }
+
+    #dark-light {
+        grid-column: 3/4;
+    }
+
+    /*============ FOOTER STYLING ==============*/
+    footer {
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}
