@@ -12,7 +12,7 @@ function buildMember(member) {
     return `
         <section class="card">
             <h2>${member.name}</h2>
-            <img src="${member.image}" alt="${member.name}">
+            <img src="${member.image}" alt="${member.name}" load="lazy">
             <p><span>Address: </span>${member.address}</p>
             <p><span>Phone: </span>${member.phone}</p>
             <p>
