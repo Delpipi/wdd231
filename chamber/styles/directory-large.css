@@ -20,22 +20,31 @@
     .list {
         display: grid;
         grid-template-columns: 1fr;
-        gap: 20px;
-        width: 60%;
         margin: 0 auto;
     }
 
-    .list .card-body {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        text-align: left;
+    .list h2 {
+        font-size: 1.2rem;
     }
 
-    .list .card-body img {
-        width: 100px;
-        height: auto;
-        padding-bottom: 1rem;
+    .list section:nth-child(even) {
+        background-color: #eee;
+    }
+
+    .list .card {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        padding: 1rem;
+        border: 1px solid #eee;
+    }
+
+    .list img {
+        display: none;
+    }
+
+    .list p span {
+        font-weight: 700;
+        color: var(--prim);
     }
 
 }

@@ -22,6 +22,7 @@ hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('open');
     navigation.classList.toggle('open');
 });
+
 //update DOM element content
 currentYear.textContent = today.getFullYear();
 lastModified.textContent = formattedDate;
