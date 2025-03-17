@@ -4,7 +4,7 @@ const btnGrid = document.querySelector('#grid');
 const btnList = document.querySelector('#list');
 const businessList = document.querySelector('#businessList');
 
-const url = '/chamber/data/member.json';
+const url = '/wdd231/chamber/data/member.json';
 
 let members;
 
