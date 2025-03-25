@@ -16,8 +16,8 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/base-large.css">
-    <link rel="stylesheet" href="styles/directory.css">
-    <link rel="stylesheet" href="styles/directory-large.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/home-large.css">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,8 +30,8 @@
         <a href="#" id="menu" aria-label="Menu"></a>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="directory.html" class="active">Directory</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
                 <li><a href="#">Join</a></li>
                 <li><a href="#">Dicovery</a></li>
             </ul>
@@ -39,17 +39,65 @@
         <a href="#" id="dark-light"><img src="images/night-mode.png" alt="Night and mode icon"></a>
     </header>
     <main>
-        <h1>Business Directory</h1>
-        <div class="menu">
-            <button id="grid">⏹️Grid</button>
-            <button id="list">📄List</button>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-image-large.webp 1x, images/hero-image-large@2x.webp 2x"
+                    media="(min-width: 1024px)" type="image/webp">
+                <source srcset="images/hero-image-medium.webp 1x, images/hero-image-medium@2x.webp 2x"
+                    media="(min-width: 760px)" type="image/webp">
+                <img src="images/hero-image-small.webp"
+                    srcset="images/hero-image-small.webp 1x, images/hero-image-small@2x.webp 2x"
+                    alt="Ivorian private sector meets business delegation" width="1520" height="883" loading="lazy">
+            </picture>
+            <div class="overlay">
+                <h2>Ivorian private sector meets business delegation</h2>
+                <a href="#">Join us</a>
+            </div>
         </div>
-        <div class="grid" id="businessList">
-            <!-- list from directory.js -->
+        <div class="main-content">
+            <div class="header-block">
+                <h1>Home</h1>
+            </div>
+
+            <div class="weather-block">
+                <section class="card events">
+                    <div class="card-header">
+                        <h2>Events</h2>
+                    </div>
+                    <div class="card-body">
+
+                    </div>
+                </section>
+                <section class="card">
+                    <div class="card-header">
+                        <h2>Weather Forecast</h2>
+                    </div>
+                    <div id="currentWeather">
+
+                    </div>
+                </section>
+
+                <section class="card">
+                    <div class="card-header">
+                        <h2>Weather Forecast</h2>
+                    </div>
+                    <div class="card-body">
+                        <ul id="weatherForecast">
+
+                        </ul>
+                    </div>
+                </section>
+            </div>
+
+            <div class="gold-silver-members">
+                <h3>Gold or Silver members</h3>
+                <div id="gold-or-silvermembers-block">
+                </div>
+            </div>
         </div>
     </main>
     <footer>
-        <div class="adress">
+        <div class="address">
             <ul>
                 <li>Abidjan Cote d'Ivoire, Angre 8th street</li>
                 <li>info@chamber.org</li>
@@ -80,7 +128,8 @@
     </footer>
     <script src="scripts/base.js" async defer></script>
     <script src="scripts/api.js" type="module"></script>
-    <script src="scripts/directory.js" type="module"></script>
+    <script src="scripts/utility.js" type="module"></script>
+    <script src="scripts/home.js" type="module"></script>
 </body>
 
 </html>

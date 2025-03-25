@@ -27,6 +27,40 @@ ul {
     list-style: none;
 }
 
+.card {
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px var(--accent-color);
+}
+
+.card-header {
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.card-header h4,
+.card-header h2 {
+    font-size: 1.3rem;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 10px;
+
+    padding: 1rem;
+}
+
+.card-body img {
+    width: 80px;
+    height: auto;
+    object-fit: cover;
+}
+
+.card-body ul li {
+    padding-bottom: 0.5rem;
+}
+
 /*============ HEADER STYLING ==============*/
 header {
     position: relative;
@@ -100,13 +134,14 @@ footer {
     padding: 1rem;
     font-size: 14px;
 
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
 }
 
-.adress,
+.address,
 .social-media,
 .info {
+    width: 100%;
     padding: 0.5rem;
 }
 

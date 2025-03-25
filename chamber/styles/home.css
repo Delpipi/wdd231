@@ -1,0 +1,91 @@
+/*============ MAIN STYLING ==============*/
+.main-content {
+    padding: 1rem;
+}
+
+.header-block h1 {
+    color: var(--secondary-color);
+}
+
+/* ------- hero styling  --------*/
+.hero {
+    position: relative;
+    text-align: center;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.overlay h2 {
+    font-size: 1rem;
+    padding: 1rem;
+}
+
+.overlay {
+    background-color: rgba(255, 255, 255, 0.6);
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+
+.hero a {
+    display: block;
+    background-color: var(--primary-color);
+    padding: 0.5rem 3rem;
+    text-align: center;
+
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+/* ------ weather-block styling -----*/
+.weather-block {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.weather-block .card-header {
+    background-color: var(--secondary-color);
+}
+
+.weather-block .card-body ul li {
+    padding-bottom: 0.5rem;
+}
+
+.current-weather {
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+#weatherForecast li {
+    font-size: 1.2rem;
+}
+
+/*------- gold-silver-members syling ------*/
+.gold-silver-members h3 {
+    font-size: 1.5rem;
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+}
+
+#gold-or-silvermembers-block {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#gold-or-silvermembers-block .card-header {
+    text-align: center;
+    border-bottom: 2px solid var(--accent-color);
+}
+
+#gold-or-silvermembers-block .card-header h4 {
+    color: var(--secondary-color);
+}

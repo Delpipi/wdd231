@@ -7,7 +7,8 @@
             "website": "https://kolarel.com",
             "image": "https://uploads.turbologo.com/uploads/design/preview_image/1685919/preview_image20240311-7-xfh2zt.png",
             "membershipLevel": 3,
-            "description": "Software development and web solutions agency."
+            "description": "Software development and web solutions agency.",
+            "level": "gold"
         },
         {
             "name": "Vortex",
@@ -16,7 +17,8 @@
             "website": "https://adcconsulting.com",
             "image": "https://uploads.turbologo.com/uploads/design/preview_image/1656461/preview_image20241003-1-593rkm.png",
             "membershipLevel": 2,
-            "description": "IT consulting and digital development company."
+            "description": "IT consulting and digital development company.",
+            "level": "bronze"
         },
         {
             "name": "Smart",
@@ -25,7 +27,8 @@
             "website": "https://investusefull.com",
             "image": "https://uploads.turbologo.com/uploads/design/hq_preview_image/1858946/draw_svg20220708-17552-1qb988h.svg.png",
             "membershipLevel": 1,
-            "description": "Investment and financial management platform."
+            "description": "Investment and financial management platform.",
+            "level": "silver"
         },
         {
             "name": "WAS Technologies",
@@ -34,7 +37,8 @@
             "website": "https://wastechnologies.com",
             "image": "https://uploads.turbologo.com/uploads/design/hq_preview_image/74374/draw_svg20240619-7-6slf9x.svg.png",
             "membershipLevel": 3,
-            "description": "Company specializing in cloud solutions and AI."
+            "description": "Company specializing in cloud solutions and AI.",
+            "level": "gold"
         },
         {
             "name": "Mindtech Solutions",
@@ -43,7 +47,8 @@
             "website": "https://techafrica.com",
             "image": "https://uploads.turbologo.com/uploads/design/preview_image/4360922/preview_image20241017-1-kwqm2q.png",
             "membershipLevel": 2,
-            "description": "Provider of technological solutions in Africa."
+            "description": "Provider of technological solutions in Africa.",
+            "level": "silver"
         },
         {
             "name": "WEB PLANET",
@@ -52,7 +57,8 @@
             "website": "https://digiinnov.com",
             "image": "https://uploads.turbologo.com/uploads/design/preview_image/1503315/preview_image20240311-7-1abkwxm.png",
             "membershipLevel": 1,
-            "description": "Startup specializing in digital transformation."
+            "description": "Startup specializing in digital transformation.",
+            "level": "gold"
         },
         {
             "name": "Pro Tech",
@@ -61,7 +67,8 @@
             "website": "https://globalsoft.com",
             "image": "https://uploads.turbologo.com/uploads/design/preview_image/1518344/preview_image20240311-6-14imvs4.png",
             "membershipLevel": 3,
-            "description": "Global leader in enterprise software."
+            "description": "Global leader in enterprise software.",
+            "level": "bronze"
         }
     ]
 }

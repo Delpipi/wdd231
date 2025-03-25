@@ -28,30 +28,12 @@ main .menu button {
     gap: 10px;
 }
 
-.grid .card {
-    border-radius: 10px;
-    box-shadow: 0px -1px 5px var(--accent-color);
-    padding: 1rem;
+
+.grid .card-header {
     text-align: center;
+    border-bottom: 2px solid var(--accent-color);
 }
 
-.grid h2 {
-    padding-bottom: 1rem;
-    margin-bottom: 1rem;
-    border-bottom: 1px solid var(--accent-color);
-}
-
-.grid .card img {
-    width: 150px;
-    height: auto;
-    padding-bottom: 1rem;
-}
-
-.grid a {
-    color: var(--text-color);
-}
-
-.grid p span {
-    font-weight: 700;
-    color: var(--prim);
+.grid .card-header h2 {
+    color: var(--secondary-color);
 }
