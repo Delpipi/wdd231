@@ -25,4 +25,4 @@ hamburger.addEventListener('click', () => {
 
 //update DOM element content
 currentYear.textContent = today.getFullYear();
-lastModified.textContent = formattedDate;
+lastModified.textContent = `Last Modified: ${formattedDate}`;

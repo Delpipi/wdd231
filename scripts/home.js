@@ -131,8 +131,25 @@ function buildCourseTechnologyList(technologies) {
 }
 
 function buildCourseCard(course) {
+    const container = document.createElement('div');
+    container.classList.add('course');
 
-    return `
+    const courseHeader = document.createElement('div');
+    container.classList.add('course-header');
+
+    const button = document.createElement('button');
+    button.classList.add('btn');
+    button.classList.add('btn-course');
+    button.classList.add(course.completed ? 'complete' : 'not-complete');
+    button.textContent = `${course.subject} ${course.number}`;
+    button.addEventListener('click', () => showDescription(course));
+
+    courseHeader.appendChild(button);
+    container.appendChild(courseHeader);
+
+    return container;
+
+    /* return `
         <div class="course">
             <div class="course-header">
                 <button type="button" class="btn btn-course ${course.completed ? 'complete' : 'not-complete'}">
@@ -148,9 +165,40 @@ function buildCourseCard(course) {
                     <ul>${buildCourseTechnologyList(course.technology)}</ul>
                 </div>
             </div>
-        </div>
-    `;
+        </div> 
+    `;*/
 }
+
+function showDescription(course) {
+    //console.log(course);
+    dialogBox.innerHTML = `
+        <div class="dialog-header">
+            <h2>${course.subject} ${course.number} </h2>
+            <button>X</button>
+        </div>
+        <div class="dialog-body">
+            <h3> ${course.title}</h3 >
+            <p class="credit">Credit: <span>${course.credits}</span></p>
+            <p class="desc">${course.description}</p>
+            <div class="tech">
+                <h4>Technologies : </h4>
+                <ul>${buildCourseTechnologyList(course.technology)}</ul>
+            </div>
+        </div>
+        
+    `;
+    dialogBox.showModal();
+}
+
+document.querySelector('#dialogBox').addEventListener('click', () => {
+    dialogBox.close();
+});
+
+window.addEventListener('click', (event) => {
+    if (event.target === dialogBox) {
+        dialogBox.close();
+    }
+});
 
 function buildSubjectButtonList(subjects) {
 
@@ -179,26 +227,21 @@ function buildCardBody(courses) {
     //create subject Course List element container
     const subjectCourseList = document.createElement('div');
     subjectCourseList.classList.add('subject-courses');
-    subjectCourseList.innerHTML = filteredCourses(courses, "ALL").map(course => buildCourseCard(course)).join("");
+
+    //subjectCourseList.innerHTML = filteredCourses(courses, "ALL").map(course => buildCourseCard(course)).join("");
+    filteredCourses(courses, "ALL").forEach(course => subjectCourseList.appendChild(buildCourseCard(course)));
 
     //Filter courses List based on the selected subject
     subjectButtonList.querySelectorAll('.btn-subject').forEach(button => {
+
         button.addEventListener('click', () => {
             let subject = button.getAttribute('data-subject');
-            subjectCourseList.innerHTML = filteredCourses(courses, subject).map(course => buildCourseCard(course)).join("");
+            subjectCourseList.innerHTML = "";
+            //subjectCourseList.innerHTML = filteredCourses(courses, subject).map(course => buildCourseCard(course)).join("");
+            filteredCourses(courses, subject).forEach(course => subjectCourseList.appendChild(buildCourseCard(course)));
         });
     });
 
-    //Toggle course's description
-    subjectCourseList.addEventListener('click', (event) => {
-        if (event.target && event.target.classList.contains('btn-course')) {
-            //Get the corresponding description
-            const description = event.target.closest('.course-header').nextElementSibling;
-
-            //Toggle description visibility
-            description.classList.toggle('visible');
-        }
-    });
 
     container.appendChild(subjectButtonList);
     container.appendChild(subjectCourseList);

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Join | Côte d'Ivire Chamber of Commerce</title>
+    <meta name="description" content="Côte d'Ivire Chamber of Commerce | Join page">
+    <meta name="author" content="Kouame Alexandre Paul">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="Côte d'Ivoire Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://delpipi.github.io/wdd231/chamber/images/plateau_abidjan.webp">
+    <meta property="og:url" content="https://delpipi.github.io/wdd231/chamber/directory.html">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/base-large.css">
+    <link rel="stylesheet" href="styles/join.css">
+    <link rel="stylesheet" href="styles/join-large.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img src="images/logo-chamber-commerce.svg" alt="Cote d'Ivoire chamber of commerce brand" class="logo">
+        <a href="#" id="menu" aria-label="Menu"></a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html" class="active">Join</a></li>
+                <li><a href="#">Dicovery</a></li>
+            </ul>
+        </nav>
+        <a href="#" id="dark-light"><img src="images/night-mode.png" alt="Night and mode icon"></a>
+    </header>
+    <main>
+        <h1>Join Chamber</h1>
+        <section class="form card">
+            <h3>Join the chamber</h3>
+            <form action="" method="get" class="joinForm">
+                <label for="firstname">First name *
+                    <input type="text" name="firstname" id="firstname" required autocomplete="given-name"
+                        title="Your first name">
+                </label>
+                <label for="lastname">Last name *
+                    <input type="text" name="lastname" id="lastname" required autocomplete="family-name"
+                        title="Your last name">
+                </label>
+                <label for="organizationTitle">Organizational title
+                    <input type="text" name="organizationTitle" id="organizationTitle" autocomplete="organization-title"
+                        title="Your organizational title">
+                </label>
+                <label for="email">Email Address *
+                    <input type="email" name="email" id="email" required autocomplete="email"
+                        title="Your email address">
+                </label>
+                <label for="phoneNumber">Mobile phone number *
+                    <input type="tel" name="phoneNumber" id="phoneNumber" required autocomplete="tel"
+                        title="Your Mobile phone number">
+                </label>
+                <label for="organizationName">Organizational Name *
+                    <input type="text" name="organizationName" id="organizationName" required
+                        autocomplete="organization" title="Your organizational name">
+                </label>
+                <label for="membershipLevel">Select Membership Level
+                    <select name="" id="membershipLevel">
+                        <option value="">NP Membership</option>
+                        <option value="bronze">Bronze Membership</option>
+                        <option value="silver">Silver Membership</option>
+                        <option value="gold">Gold Membership</option>
+                    </select>
+                </label>
+                <label for="message">Message
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                </label>
+                <label for="timestamp">
+                    <input type="hidden" name="timestamp" id="timestamp">
+                </label>
+
+                <input type="submit" value="Join the chamber">
+            </form>
+        </section>
+        <section class="membership-level">
+            <div class="card">
+                <p>Non Profit Membership Level</p>
+                <button>Learn more</button>
+            </div>
+            <div class="card">
+                <p>Bronze Membership Level</p>
+                <button>Learn more</button>
+            </div>
+            <div class="card">
+                <p>Silver Profit Membership Level</p>
+                <button>Learn more</button>
+            </div>
+            <div class="card">
+                <p>Gold Profit Membership Level</p>
+                <button>Learn more</button>
+            </div>
+        </section>
+        <dialog id="dialogBox">
+            <p>nn</p>
+        </dialog>
+    </main>
+    <footer>
+        <div class="address">
+            <ul>
+                <li>Abidjan Cote d'Ivoire, Angre 8th street</li>
+                <li>info@chamber.org</li>
+                <li>(+225)01 41 42 96 28</li>
+            </ul>
+        </div>
+        <div class="social-media">
+            <ul>
+                <li><a href="http://youtube.com" target="_blank">
+                        <img src="images/youtube_icon.webp" alt="Circle youtube icon"></a>
+                </li>
+                <li><a href="http://twitter.com" target="_blank">
+                        <img src="images/twitter_icon.webp" alt="Circle twitter icon"></a>
+                </li>
+                <li><a href="http://facebook.com" target="_blank">
+                        <img src="images/facebook_icon.webp" alt="Circle facebook icon"></a>
+                </li>
+            </ul>
+        </div>
+        <div class="info">
+            <ul>
+                <li>WDD231 Class Project</li>
+                <li>Kouame Alexandre Paul</li>
+                <li>&copy; <span id="currentYear"></span> Côte d'Ivoire Chamber of Commerce </li>
+                <li id="lastModified"></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="scripts/base.js" async defer></script>
+    <script src="scripts/join.js" type="module"></script>
+</body>
+
+</html>

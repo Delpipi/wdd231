@@ -50,6 +50,11 @@ p {
     text-align: justify;
 }
 
+dialog {
+    border: none;
+    border-radius: 10px;
+}
+
 /*==============  header styling ==============*/
 header {
     position: relative;
@@ -197,34 +202,60 @@ main>h1 {
     background-color: var(--accent-color);
 }
 
-.course-description {
-    display: none;
-    padding: 0 1em;
+
+#dialogBox {
+    position: fixed;
+    top: 50%;
+    left: 10%;
+    right: 10%;
+    transform: translateY(-50%);
 }
 
-.course-description.visible {
-    display: block;
+#dialogBox .dialog-header {
+    display: grid;
+    grid-template-columns: auto 44px;
+    background-color: var(--primary-color);
+    align-items: center;
+    padding: 0.5rem;
 }
 
-.course-description h3 {
+#dialogBox .dialog-header h2 {
+    text-align: center;
+    color: #fff;
+}
+
+#dialogBox .dialog-header button {
+    border: none;
+    background-color: var(--accent-color);
+    padding: 0.6rem;
+    border-radius: 5px;
+    color: #FF0000;
+    font-weight: 700;
+}
+
+#dialogBox .dialog-body {
+    padding: 1rem;
+}
+
+#dialogBox .dialog-body h3 {
     padding-top: 1em;
     color: var(--primary-color);
 }
 
-.course-description .credit {
+#dialogBox .dialog-body .credit {
     color: var(--primqry-color);
     padding-bottom: 1em;
 }
 
-.course-description .credit>span {
+#dialogBox .dialog-body .credit>span {
     font-weight: bold;
 }
 
-.course-description .desc {
+#dialogBox .dialog-body .desc {
     padding-bottom: 1em;
 }
 
-.course-description .tech {
+#dialogBox .dialog-body .tech {
     padding: 0.5em;
     border-top: 2px solid var(--accent-color);
 
@@ -232,9 +263,14 @@ main>h1 {
     color: var(--primary-color);
 }
 
-.course-description .tech ul li::before {
+#dialogBox .dialog-body .tech ul li::before {
     content: "✓";
     margin-right: 5px;
+}
+
+
+::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 /*==============  footer styling ==============*/

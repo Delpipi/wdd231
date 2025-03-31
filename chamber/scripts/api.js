@@ -1,8 +1,8 @@
 //For production
-const url = '/wdd231/chamber/data/member.json';
+//const url = '/wdd231/chamber/data/member.json';
 
 //For local test
-//const url = '/chamber/data/member.json';
+const url = '/chamber/data/member.json';
 
 //Current weather data
 //coordinates of Abidjan 5.3291365136297655, -4.024296959372601

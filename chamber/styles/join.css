@@ -1,0 +1,77 @@
+/*============= MAIN STYLE ============== */
+main {
+    padding: 1rem;
+}
+
+/* --------- form style -------------*/
+.form {
+    padding: 1rem;
+}
+
+.joinForm label {
+    display: block;
+    padding-top: 1rem;
+    font-size: 0.9rem;
+}
+
+.joinForm input:focus,
+.joinForm textarea:focus,
+.joinForm select:focus {
+    outline: 2px solid var(--accent-color);
+}
+
+.joinForm input[type="text"],
+.joinForm input[type="email"],
+.joinForm input[type="tel"],
+.joinForm select,
+.joinForm textarea {
+    display: block;
+    background-color: rgba(229, 229, 229, 0.5);
+    border: none;
+    border-radius: 10px;
+    padding: 0.75rem;
+    width: 100%;
+    appearance: none;
+    color: var(--text-color);
+}
+
+.joinForm input[required] {
+    border-left: 3px solid red;
+}
+
+.joinForm input[type="submit"] {
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    padding: 1rem;
+    border: none;
+    width: 100%;
+    font-size: 1.2rem;
+}
+
+/* --------- Membership Level style -------------*/
+.membership-level .card {
+    background-color: var(--accent-color);
+    padding: 2rem;
+    text-align: center;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    margin-top: 1rem;
+}
+
+.membership-level .card p {
+    padding: 1rem;
+}
+
+.membership-level .card button {
+    background-color: var(--primary-color);
+    border: none;
+    display: inline-block;
+    padding: 0.5rem 2rem;
+    border-radius: 10px;
+}
+
+#dialogBox {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}

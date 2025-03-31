@@ -3,10 +3,6 @@
     padding: 1rem;
 }
 
-.header-block h1 {
-    color: var(--secondary-color);
-}
-
 /* ------- hero styling  --------*/
 .hero {
     position: relative;
