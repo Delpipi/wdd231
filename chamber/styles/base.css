@@ -70,6 +70,7 @@ dialog {
     top: 50%;
     left: 10%;
     right: 10%;
+    width: 80%;
     transform: translateY(-50%);
 
     border-radius: 10px;

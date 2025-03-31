@@ -1,0 +1,23 @@
+@media screen and (min-width: 760px) {
+    main {
+        padding: 5rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    main h1 {
+        grid-column: 1/3;
+    }
+
+    .form {
+        grid-column: 1/2;
+        margin: 2rem;
+    }
+
+    .membership-level {
+        grid-column: 2/3;
+        margin: 2rem;
+    }
+
+}

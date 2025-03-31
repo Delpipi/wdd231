@@ -32,7 +32,7 @@ silverLevelButton.addEventListener('click', () => {
 
 
 goldLevelButton.addEventListener('click', () => {
-    dialogTitle.textContent = "Benefits of NP Level";
+    dialogTitle.textContent = "Benefits of Gold Level";
     dialogInfo.textContent = "All Silver benefits, plus spotlight advertising and premium training.";
     dialogBox.showModal();
 });

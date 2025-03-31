@@ -1,6 +1,18 @@
 /* https://coolors.co/009e60-f77f00-ffffff-000000 */
 @media screen and (min-width: 760px) {
 
+    dialog {
+        position: fixed;
+        top: 50%;
+        left: 20%;
+        right: 20%;
+        width: 60%;
+        transform: translateY(-50%);
+
+        border-radius: 10px;
+        border: none;
+    }
+
     /*============ HEADER STYLING ==============*/
     header {
         grid-template-columns: 200px 1fr 100px;

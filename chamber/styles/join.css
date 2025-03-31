@@ -1,6 +1,8 @@
 /*============= MAIN STYLE ============== */
 main {
     padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
 /* --------- form style -------------*/
@@ -70,7 +72,6 @@ main {
     border-radius: 10px;
 }
 
-
 #dialogBox div {
     background-color: var(--secondary-color);
     display: grid;
@@ -78,8 +79,6 @@ main {
     align-items: center;
     padding: 1rem;
 }
-
-
 
 #dialogBox button {
     border: none;
