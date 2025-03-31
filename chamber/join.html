@@ -52,11 +52,12 @@
                 </label>
                 <label for="organizationTitle">Organizational title
                     <input type="text" name="organizationTitle" id="organizationTitle" autocomplete="organization-title"
-                        title="Only letters, hyphens, and spaces. Minimum 7 characters." pattern="^[A-Za-z\- ]{7,}$">
+                        title="Only letters, hyphens, and spaces. Minimum 7 characters." pattern="^[A-Za-z\- ]+$"
+                        maxlength="7">
                 </label>
                 <label for="email">Email Address *
-                    <input type="email" name="email" id="email" required autocomplete="email"
-                        title="Your email address">
+                    <input type="email" name="email" id="email" required autocomplete="email" title="Your email address"
+                        placeholder="john@domain.com">
                 </label>
                 <label for="phoneNumber">Mobile phone number *
                     <input type="tel" name="phoneNumber" id="phoneNumber" required autocomplete="tel"
