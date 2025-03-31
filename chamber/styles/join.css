@@ -58,7 +58,7 @@ main {
     margin-top: 1rem;
 }
 
-.membership-level .card p {
+.membership-level .card h3 {
     padding: 1rem;
 }
 
@@ -70,8 +70,29 @@ main {
     border-radius: 10px;
 }
 
-#dialogBox {
-    position: relative;
-    justify-content: center;
+
+#dialogBox div {
+    background-color: var(--secondary-color);
+    display: grid;
+    grid-template-columns: auto 44px;
     align-items: center;
+    padding: 1rem;
+}
+
+
+
+#dialogBox button {
+    border: none;
+    background-color: var(--accent-color);
+    padding: 0.5rem;
+    border-radius: 5px;
+    color: #FF0000;
+    font-weight: bold;
+}
+
+#dialogBox p {
+    font-size: 0.8rem;
+    line-height: 20px;
+    text-align: justify;
+    padding: 1rem;
 }

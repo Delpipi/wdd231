@@ -65,6 +65,21 @@ ul {
     padding-bottom: 0.5rem;
 }
 
+dialog {
+    position: fixed;
+    top: 50%;
+    left: 10%;
+    right: 10%;
+    transform: translateY(-50%);
+
+    border-radius: 10px;
+    border: none;
+}
+
+::backdrop {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
 /*============ HEADER STYLING ==============*/
 header {
     position: relative;

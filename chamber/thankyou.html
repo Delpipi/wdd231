@@ -4,9 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Directory | Côte d'Ivire Chamber of Commerce</title>
-    <meta name="description"
-        content="Welcome to the  Cote d'Ivoire Chamber of Commerce Directory page where all the business are listed">
+    <title>Join | Côte d'Ivire Chamber of Commerce</title>
+    <meta name="description" content="Côte d'Ivire Chamber of Commerce | Join page">
     <meta name="author" content="Kouame Alexandre Paul">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta property="og:title" content="Côte d'Ivoire Chamber of Commerce">
@@ -16,8 +15,8 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/base-large.css">
-    <link rel="stylesheet" href="styles/directory.css">
-    <link rel="stylesheet" href="styles/directory-large.css">
+    <link rel="stylesheet" href="styles/thankyou.css">
+
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -39,17 +38,13 @@
         <a href="#" id="dark-light"><img src="images/night-mode.png" alt="Night and mode icon"></a>
     </header>
     <main>
-        <h1>Directory</h1>
-        <div class="menu">
-            <button id="grid">⏹️Grid</button>
-            <button id="list">📄List</button>
-        </div>
-        <div class="grid" id="businessList">
-            <!-- list from directory.js -->
-        </div>
+        <h1>Thank you</h1>
+        <section class="card">
+            <div id="result"></div>
+        </section>
     </main>
     <footer>
-        <div class="adress">
+        <div class="address">
             <ul>
                 <li>Abidjan Cote d'Ivoire, Angre 8th street</li>
                 <li>info@chamber.org</li>
@@ -79,7 +74,7 @@
         </div>
     </footer>
     <script src="scripts/base.js" async defer></script>
-    <script src="scripts/directory.js" type="module"></script>
+    <script src="scripts/thankyou.js" type="module"></script>
 </body>
 
 </html>
