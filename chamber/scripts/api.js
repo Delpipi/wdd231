@@ -5,7 +5,7 @@ const url = '/wdd231/chamber/data/member.json';
 //const url = '/chamber/data/member.json';
 
 //Current weather data
-//coordinates of Abidjan 5.3291365136297655, -4.024296959372601
+//coordinates of Abidjan 5.3291365136297655, -4.0242969593726
 const lat = 5.329;
 const long = -4.024;
 
