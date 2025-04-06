@@ -1,0 +1,24 @@
+@media screen and (min-width: 760px) {
+    main {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .wireframes {
+        display: grid;
+        grid-template-columns: 1fr 300px;
+        column-gap: 10px;
+    }
+
+    .wireframes h2{
+        grid-column: span 2;
+    }
+
+    .dosktop {
+        grid-column: 1/1;
+    }
+
+    .mobile {
+        grid-column: 2/2;
+    }
+} 
