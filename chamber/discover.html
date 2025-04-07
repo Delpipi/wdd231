@@ -4,8 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Join | Côte d'Ivire Chamber of Commerce</title>
-    <meta name="description" content="Côte d'Ivire Chamber of Commerce | Join page">
+    <title>Discover | Côte d'Ivire Chamber of Commerce</title>
+    <meta name="description" content="Côte d'Ivire Chamber of Commerce - Discover Page">
     <meta name="author" content="Kouame Alexandre Paul">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta property="og:title" content="Côte d'Ivoire Chamber of Commerce">
@@ -15,8 +15,9 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/base-large.css">
-    <link rel="stylesheet" href="styles/thankyou.css">
-    <link rel="stylesheet" href="styles/thankyou-large.css">
+    <link rel="stylesheet" href="styles/discover.css">
+    <link rel="stylesheet" href="styles/discover-medium.css">
+    <link rel="stylesheet" href="styles/discover-large.css">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,21 +32,35 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="directory.html">Directory</a></li>
-                <li><a href="join.html" class="active">Join</a></li>
-                <li><a href="discover.html">Dicovery</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html" class="active">Dicovery</a></li>
             </ul>
         </nav>
         <a href="#" id="dark-light"><img src="images/night-mode.webp" alt="Night and mode icon"></a>
     </header>
     <main>
-        <h1>Thank you</h1>
-        <section class="card">
-            <h2>Thank you, for joining the Chamber of Commerce! We will contact you soon.</h2>
-            <div id="result"></div>
-        </section>
+        <h1>Discover</h1>
+        <div id="areaList">
+            <!-- <div class="card">
+            <h2 class="title">${area.name}</h2>
+            <figure class="image">
+                <img src="images/${area.image}" alt="${area.name}" loading="lazy">
+            </figure>
+            <p class="description">${area.description}</p>
+            <address class="address">${area.address}</address>
+            <a href="#" class="btnLearnMore">Learn More </a>
+        </div>-->
+        </div>
+        <dialog id="dialogBox">
+            <div>
+                <h3>Visitor</h3>
+                <button>X</button>
+            </div>
+            <p></p>
+        </dialog>
     </main>
     <footer>
-        <div class="address">
+        <div class="adress">
             <ul>
                 <li>Abidjan Cote d'Ivoire, Angre 8th street</li>
                 <li>info@chamber.org</li>
@@ -75,7 +90,7 @@
         </div>
     </footer>
     <script src="scripts/base.js" async defer></script>
-    <script src="scripts/thankyou.js" type="module"></script>
+    <script src="scripts/discover.js" type="module"></script>
 </body>
 
 </html>

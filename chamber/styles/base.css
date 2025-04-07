@@ -72,9 +72,31 @@ dialog {
     right: 10%;
     width: 80%;
     transform: translateY(-50%);
-
     border-radius: 10px;
     border: none;
+}
+
+#dialogBox div {
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 10px;
+}
+
+#dialogBox button {
+    border: none;
+    background-color: var(--accent-color);
+    padding: 0.5rem;
+    border-radius: 5px;
+    color: #FF0000;
+    font-weight: bold;
+}
+
+#dialogBox p {
+    line-height: 20px;
+    text-align: justify;
+    padding: 1rem;
 }
 
 ::backdrop {

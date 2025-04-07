@@ -1,0 +1,50 @@
+[
+    {
+        "name": "Gbofe",
+        "image": "culture-heritage-art.webp",
+        "address": "Man, Côte d'Ivoire",
+        "description": "Since 2008, UNESCO has taken care to include some Ivorian social practices, rituals and festive events such as Gbofe (transverse trumpet music), Balafon and Zaouli on the representative list of the intangible cultural heritage of humanity"
+    },
+    {
+        "name": "Baoule weights",
+        "image": "culture-heritage-art2.webp",
+        "address": "Yamoussoukro, Côte d'Ivoire",
+        "description": "Among the most symbolic objects of Akan culture, the Baoulé weights that were used to weigh gold powder are still cast using the ancestral lost-wax technique"
+    },
+    {
+        "name": "Ahouakro Archaeological Park",
+        "image": "nature-biodiversity.webp",
+        "address": "Ahouakro, Côte d'Ivoire",
+        "description": "The Ehotilé Islands National Park and the Ahouakro Archaeological Park, both on the UNESCO Tentative List, bridge the gap between nature and artifacts, a living testament to the country's history"
+    },
+    {
+        "name": "Taï National Park",
+        "image": "nature-biodiversity2.webp",
+        "address": "Ahouakro, Côte d'Ivoire",
+        "description": "Discover the unique and ecologically protected nature of the   Taï, Comoé, and Marahoué national parks , as well as the Mount Nimba Strict Nature Reserve , home to extraordinary viviparous toads, a UNESCO World Heritage Site."
+    },
+    {
+        "name": "Assinie Beach",
+        "image": "sun-beach.webp",
+        "address": "Abidjan, Côte d'Ivoire",
+        "description": "The natural charms of Ivory Coast are expressed through a vast stretch of coastline bathed in the Atlantic Ocean . From Assinie to Jacqueville or from Fresco to Tabou , passing through the beautiful Grand-Béréby with a sea that is still pure and clean at the level of the virgin coasts of exceptional beaches where fine sand, coconut trees and rocky landscapes coexist harmoniously"
+    },
+    {
+        "name": "Sassandra Beach",
+        "image": "sun-beach2.webp",
+        "address": "Sassandra, Côte d'Ivoire",
+        "description": "The natural charms of Ivory Coast are expressed through a vast stretch of coastline bathed in the Atlantic Ocean . From Assinie to Jacqueville or from Fresco to Tabou , passing through the beautiful Grand-Béréby with a sea that is still pure and clean at the level of the virgin coasts of exceptional beaches where fine sand, coconut trees and rocky landscapes coexist harmoniously"
+    },
+    {
+        "name": "Banana foutou, Assiaploua sauce",
+        "image": "art-living-local-gastronomy.webp",
+        "address": "Côte d'Ivoire",
+        "description": "Banana foutou with Assiaploua sauce. A dish from the Agnis of the Djuablin region. It is made from plantain bananas mixed with cassava for the foutou"
+    },
+    {
+        "name": "Garba",
+        "image": "art-living-local-gastronomy2.webp",
+        "address": "Côte d'Ivoire",
+        "description": "Street Food Garba (different from attiéké – fish) is a popular Ivorian dish made from cassava semolina, commonly called attiéké, and served with fried salted tuna. "
+    }
+]

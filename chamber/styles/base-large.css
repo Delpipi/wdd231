@@ -34,6 +34,10 @@
         grid-column: 2/3;
     }
 
+    header nav a {
+        padding: 0.8rem 2rem;
+    }
+
     header nav a,
     header nav li {
         display: inline-block;

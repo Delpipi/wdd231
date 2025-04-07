@@ -1,8 +1,11 @@
-//For production
+/* //For production
 const url = '/wdd231/chamber/data/member.json';
+const discoverUrl = '/wdd231/chamber/data/discover.json';
+ */
 
 //For local test
-//const url = '/chamber/data/member.json';
+const url = '/chamber/data/member.json';
+const discoverUrl = '/chamber/data/discover.json';
 
 //Current weather data
 //coordinates of Abidjan 5.3291365136297655, -4.0242969593726
@@ -64,6 +67,21 @@ export async function getForecastDaysWeaterData() {
             return data.list;
         } else {
             throw Error(awaitresponse.text())
+        }
+    } catch (error) {
+        console.error(error);
+    }
+}
+
+export async function getAllDiscoverAreas() {
+    try {
+        const response = await fetch(discoverUrl);
+        if (response.ok) {
+            const data = await response.json();
+            //console.table(data);
+            return data;
+        } else {
+            throw Error(await response.text());
         }
     } catch (error) {
         console.error(error);
