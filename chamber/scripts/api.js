@@ -1,12 +1,12 @@
-/* //For production
+//For production
 const url = '/wdd231/chamber/data/member.json';
 const discoverUrl = '/wdd231/chamber/data/discover.json';
- */
 
-//For local test
+
+/* //For local test
 const url = '/chamber/data/member.json';
 const discoverUrl = '/chamber/data/discover.json';
-
+ */
 //Current weather data
 //coordinates of Abidjan 5.3291365136297655, -4.0242969593726
 const lat = 5.329;
