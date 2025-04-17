@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Côte d'Ivoire HealthCare - Tips page</title>
+    <meta name="description" content="WDD 231 - Final Project | Côte d'Ivoire HealthCare | Tips & Statistics  Page">
+    <meta name="author" content="Kouame Alexandre Paul">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="Côte d'Ivoire HealthCare - Home page">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://delpipi.github.io/wdd231/project/images/meagui-hospital.webp">
+    <meta property="og:url" content="https://delpipi.github.io/wdd231/project">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/base-large.css">
+    <link rel="stylesheet" href="styles/tips.css">
+    <link rel="stylesheet" href="styles/tips-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="images/logo.svg" alt="Compagny Logo" width="200">
+        </div>
+        <a href="#" id="menu" aria-label="Menu"></a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tips.html" class="active">Tips</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="main-header">
+            <h1>Health Tips & Statistics</h1>
+            <p>Malaria, Polio & Vaccination</p>
+        </section>
+
+        <section class="disease">
+            <h2>Malaria-related Indicators</h2>
+            <div id="malaria-stat"></div>
+            <section class="tips-card">
+                <h3>Tips on Malaria </h3>
+                <img src="images/malaria-picture-for-tips.webp" alt="Child under mosquito net" class="img-responsive">
+                <ul>
+                    <li>Sleep under a mosquito net every night: Especially an insecticide-treated net (ITN). This is the
+                        most effective prevention, particularly for children under 5 and pregnant women.
+
+                    </li>
+                    <li>Get tested quickly if you have a fever: Malaria symptoms start with fever, chills, and
+                        headaches.
+                        Don’t wait — early diagnosis and treatment save lives</li>
+                    <li>Drain stagnant water around your house: Mosquitoes breed in still water — empty buckets, tires,
+                        flower pots, etc.</li>
+                    <li>Support vaccination programs: Côte d’Ivoire started using the RTS,S malaria vaccine for children
+                        in
+                        pilot programs. Encourage vaccination when available!</li>
+                </ul>
+                <a href="https://www.who.int/news-room/fact-sheets/detail/malaria" target="_blank"
+                    class="more-info">More Info</a>
+            </section>
+        </section>
+
+        <section class="disease">
+            <h2>Polio-related Indicators</h2>
+            <div id="polio-stat"></div>
+            <section class="tips-card">
+                <h3>Tips on Polio</h3>
+                <img src="images/polio-picture-for-tips.webp" alt="Child with polio disease" class="img-responsive">
+                <ul>
+                    <li>Ensure children receive all polio vaccine doses: The oral polio vaccine (OPV) is free and safe
+                        in
+                        Côte d'Ivoire. Several campaigns are organized regularly — don't miss them!</li>
+                    <li>Check for vaccine cards: Make sure your child’s vaccine record is up-to-date. Full protection
+                        needs
+                        multiple doses.</li>
+                    <li>Spread the word, not the virus: Talk to your neighbors and relatives about the importance of
+                        polio
+                        vaccines, especially in rural areas.</li>
+                    <li>Keep hygiene high: Polio spreads through contaminated water or food — always wash hands with
+                        soap
+                        before meals and after the toilet.</li>
+                </ul>
+                <a href="https://www.who.int/news-room/fact-sheets/detail/poliomyelitis" target="_blank"
+                    class="more-info">More Info</a>
+            </section>
+        </section>
+
+        <section class="disease">
+            <h2>Vaccination Indicators</h2>
+            <div id="vaccination-stat"></div>
+            <section class="tips-card">
+                <h3>General Vaccination Tips</h3>
+                <img src="images/vaccination-picture-for-tips.webp" alt="Child receive vaccination"
+                    class="img-responsive">
+                <ul>
+                    <li>Complete the routine immunization schedule: Vaccines for measles, TB, hepatitis B, yellow fever,
+                        etc., are part of Côte d'Ivoire’s Expanded Program on Immunization (PEV).</li>
+                    <li>Vaccinate on time: Delays reduce effectiveness. Follow the schedule at local clinics or during
+                        vaccination days.</li>
+                    <li>Vaccines are free in public health centers: Many vaccines for children and mothers are offered
+                        free
+                        of charge in public facilities.</li>
+                    <li>Don’t rely on traditional medicine alone: Encourage families to combine traditional knowledge
+                        with
+                        modern preventive care like vaccines.</li>
+                </ul>
+                <a href="https://www.who.int/health-topics/vaccines-and-immunization#tab=tab_1" target="_blank"
+                    class="more-info">More Info</a>
+            </section>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentYear"></span></p>
+        <p>WDD 231 - Final Project | Kouame Alexandre Paul - Abidjan, Cote d'Ivoire</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/base.js" type="module"></script>
+    <script src="scripts/tips.js" type="module"></script>
+</body>
+
+</html>

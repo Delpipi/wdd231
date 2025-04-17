@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
 
 <head>
     <meta charset="utf-8">
@@ -23,11 +23,13 @@
 </head>
 
 <body>
+
     <header>
         <div class="logo">
             <img src="images/logo.svg" alt="Compagny Logo" width="200">
         </div>
-        <nav class="navigation">
+        <a href="#" id="menu" aria-label="Menu"></a>
+        <nav>
             <ul>
                 <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="tips.html">Tips</a></li>
@@ -35,137 +37,107 @@
             </ul>
         </nav>
     </header>
+
     <main>
-        <div class=".hero">
 
-        </div>
-        <div class="presentation">
+        <section class="hero">
+            <picture>
+                <source srcset="images/hero-image-large.webp 1x, images/hero-image-large@2x.webp 2x"
+                    media="(min-width: 1024px)" type="image/webp">
+                <source srcset="images/hero-image-medium.webp 1x, images/hero-image-medium@2x.webp 2x"
+                    media="(min-width: 760px)" type="image/webp">
+                <img src="images/hero-image-small.webp" alt="Hero image"
+                    srcset="images/hero-image-small.webp 1x, images/hero-image-small@2x.webp 2x" width="1536"
+                    height="572" loading="lazy" class="img-responsive">
+            </picture>
+            <h1>Accessible, Reliable Healthcare for All</h1>
+        </section>
+
+        <section class="presentation">
             <img src="images/civ.webp" alt="Cote d'Ivoire map" width="420" height="330" class="img-responsive">
-            <div>
-                <h1>Cote d'Ivoire</h1>
-                <table>
-                    <tbody>
-                        <tr>
-                            <td>Total population (2015)</td>
-                            <td>22,702,000</td>
-                        </tr>
-                        <tr>
-                            <td>Gross national income per capita (PPP international $, 2013)</td>
-                            <td>2</td>
-                        </tr>
-                        <tr>
-                            <td>Life expectancy at birth m/f (years, 2015)</td>
-                            <td>52/54</td>
-                        </tr>
-                        <tr>
-                            <td>Probability of dying under five (per 1 000 live births, 0)</td>
-                            <td>n/a</td>
-                        </tr>
-                        <tr>
-                            <td>Probability of dying between 15 abd 60 years m/f (per 1 000 population, 2013)</td>
-                            <td>414/377</td>
-                        </tr>
-                        <tr>
-                            <td>Total expenditure on health per capita (Intl $, 2014)</td>
-                            <td>187</td>
-                        </tr>
-                        <tr>
-                            <td>Total expenditure on health as % of GDP (2014)</td>
-                            <td>5.7</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <a href="http://www.who.int/countries/civ/en/" target="_blank">View more Data & Statistics</a>
-            </div>
-        </div>
+            <h2>Cote d'Ivoire</h2>
+            <table>
+                <caption><a href="http://www.who.int/countries/civ/en/" target="_blank" class="more-info">View more Data
+                        & Statistics</a>
+                </caption>
+                <tbody>
+                    <tr>
+                        <td>Total population (2015)</td>
+                        <td>22,702,000</td>
+                    </tr>
+                    <tr>
+                        <td>Gross national income per capita (PPP international $, 2013)</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>Life expectancy at birth m/f (years, 2015)</td>
+                        <td>52/54</td>
+                    </tr>
+                    <tr>
+                        <td>Probability of dying under five (per 1 000 live births, 0)</td>
+                        <td>n/a</td>
+                    </tr>
+                    <tr>
+                        <td>Probability of dying between 15 abd 60 years m/f (per 1 000 population, 2013)</td>
+                        <td>414/377</td>
+                    </tr>
+                    <tr>
+                        <td>Total expenditure on health per capita (Intl $, 2014)</td>
+                        <td>187</td>
+                    </tr>
+                    <tr>
+                        <td>Total expenditure on health as % of GDP (2014)</td>
+                        <td>5.7</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
 
-        <div class="">
-            <div>
-                <img src="images/ci-rapport-biennal-2022-2023.webp" alt="Rapport biennal 2022-2023" width="285"
-                    height="380" class="img-responsive">
-                <div>
-                    <h2>Biennial Report 2022–2023</h2>
-                    <ul>
-                        <li>COVID-19 Vaccination Efforts: Over 28 million vaccine doses were administered, with more
-                            than 13 million individuals fully vaccinated by December 31, 2023</li>
-                        <li>Digital Infrastructure Support: The WHO provided 30 desktop computers, 30 uninterruptible
-                            power supplies (UPS), and 10 laptops to the National Institute of Public Health (INHP)
-                            branches across the country. Additionally, 75 laptops were donated to the Expanded Program
-                            on Immunization (EPI) officers in 75 health districts, and 759 tablets were distributed to
-                            Primary Healthcare Facilities (ESPC) across 56 districts in 16 health regions.</li>
-                        <li>Capacity Building Initiatives: A total of 210 regional trainers and 1,072 ESPC staff were
-                            trained. The WHO also supported the training of 250 surveillance focal points, pediatric
-                            clinicians, and health district staff in nine targeted districts on disease surveillance.
-                        </li>
-                        <li>Health Communication and Outreach: The WHO facilitated 16,511 radio programs in French and
-                            local languages through 175 community radios, reaching a wide audience with health
-                            information
-                        </li>
-                    </ul>
-                </div>
-                <a href="https://www.afro.who.int/fr/countries/cote-divoire/publication/rapport-biennal-2022-2023-principaux-resultats"
-                    target="_blank">View more Data & Statistics</a>
-            </div>
-            <div>
-                <img src="images/scp-2022-2025-who-cote-divoire.webp" alt="SCP 2022 2025 WHO" width="285" height="380"
-                    class="img-responsive">
-                <div>
-                    <h2>WHO–Côte d’Ivoire Cooperation Strategy (CCS) 2022–2025</h2>
-                    <ul>
-                        <li>Strengthening the Health System: Improve health governance, access to essential medicines,
-                            health financing, and health information systems.</li>
-                        <li>Promoting the Quality of Health Interventions: Focus on well-being throughout the life
-                            course, with particular attention to women, newborns, children, adolescents, youth, and the
-                            elderly.</li>
-                        <li>Combating Diseases and Violence: Give special attention to the social determinants of health
-                            and the effects of climate change.</li>
-                        <li>Enhancing Emergency Preparedness and Response: Build a resilient health system capable of
-                            responding to public health emergencies and disasters.</li>
-                    </ul>
-                </div>
-                <a href="https://www.afro.who.int/fr/countries/cote-divoire/publication/strategie-de-cooperation-de-loms-avec-la-cote-divoire-scp-2022-2025"
-                    target="_blank">View more Data & Statistics</a>
-            </div>
-        </div>
+        <section class="health-info-cards">
 
-        <div class="">
-            <div class="card">
+            <h2>Health Challenges and Vaccination Coverage</h2>
+
+            <section class="card">
+                <h3>Malaria</h3>
                 <img src="images/malaria-picture-for-home.webp" alt="Malaria picture" width="300" height="200"
                     class="img-responsive">
                 <p>Malaria remains a significant public health challenge in Côte d'Ivoire, with an incidence of 268
                     cases per 1,000 inhabitants in 2023. While mortality has decreased by over 50% since 2017, the
                     disease continues to affect vulnerable populations</p>
-                <a href="#">Learn more</a>
-            </div>
-            <div class="card">
+                <a href="#" class="more-info">Learn more</a>
+            </section>
+
+            <section class="card">
+                <h3>Polio</h3>
                 <img src="images/polio-picture-for-home.webp" alt="Children with polio picture" width="300" height="200"
                     class="img-responsive">
                 <p>Polio remains a concern in Côte d’Ivoire due to vaccine-derived virus strains. In 2024, over 9
                     million children were vaccinated in nationwide campaigns to stop the spread.</p>
-                <a href="#">Learn more</a>
-            </div>
-            <div class="card">
+                <a href="#" class="more-info">Learn more</a>
+            </section>
+
+            <section class="card">
+                <h3>Vaccination</h3>
                 <img src="images/vaccination-picture-for-home.webp" alt="Children vaccinated picture" width="300"
                     height="200" class="img-responsive">
                 <p>As of 2019, approximately 76% of children in Côte d'Ivoire received all three doses of the
                     diphtheria, tetanus, and pertussis (DTP3) vaccine. Measles vaccination coverage for children aged
                     12–23 months was 70% in 2020. These figures indicate progress but also highlight areas needing
                     improvement</p>
-                <a href="#">Learn more</a>
-            </div>
-        </div>
+                <a href="#" class="more-info">Learn more</a>
+            </section>
+
+        </section>
+
     </main>
+
     <footer>
-        <div class="">
-            <ul>
-                <li>&copy;<span id="currentYear"></span></li>
-                <li>WDD 231 - Final Project | Kouame Alexandre Paul - Abidjan, Cote d'Ivoire</li>
-                <li id="lastModified"></li>
-            </ul>
-        </div>
+        <p>&copy;<span id="currentYear"></span></p>
+        <p>WDD 231 - Final Project | Kouame Alexandre Paul - Abidjan, Cote d'Ivoire</p>
+        <p id="lastModified"></p>
     </footer>
-    <script src="scripts/api.js" async defer></script>
-    <script src="scripts/base.js" async defer></script>
+
+    <script src="scripts/base.js" type="module"></script>
     <script src="scripts/home.js" type="module"></script>
 </body>
 

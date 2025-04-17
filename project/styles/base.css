@@ -1,0 +1,109 @@
+/* https://coolors.co/palette/03045e-0077b6-48cae4-caf0f8 */
+:root {
+    --primary-color: #03045E;
+    --secondary-color: #0077B6;
+    --accent-color1: #48CAE4;
+    --accent-color2: #CAF0F8;
+
+    --small-size: 1rem;
+    --medium-size: 1.5rem;
+    --large-size: 2rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--primary-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+.img-responsive {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+ul {
+    list-style: none;
+}
+
+.more-info {
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: underline;
+    color: var(--secondary-color);
+    padding: var(--small-size);
+}
+
+/*============= MENU STYLING ======================*/
+.logo {
+    padding: var(--small-size);
+}
+
+/*----- hamburger style ------*/
+#menu::before {
+    content: "\2630";
+}
+
+#menu.open::before {
+    content: "\2715";
+}
+
+#menu {
+    font-size: var(--large-size);
+    color: var(--primary-color);
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+/*------ nav style -------*/
+nav {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+nav a {
+    display: none;
+    text-align: center;
+    padding: var(--small-size) 0px;
+    border-bottom: 1px solid var(--primary-color);
+    color: #000;
+}
+
+nav a.active,
+nav a:hover {
+    background-color: var(--accent-color2);
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+.open a {
+    display: block;
+}
+
+/*============= FOOTER STYLING ======================*/
+footer {
+    font-size: 14px;
+    padding: var(--small-size);
+    text-align: center;
+    background-color: var(--accent-color2);
+    border-top: 2px solid var(--secondary-color);
+}

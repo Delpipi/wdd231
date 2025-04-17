@@ -1,0 +1,88 @@
+/*============= MAIN STYLING ======================*/
+
+/*------ hero style -------*/
+.hero {
+    position: relative;
+    margin-bottom: var(--small-size);
+}
+
+.hero h1 {
+    width: 100%;
+    padding: var(--small-size);
+    font-size: var(--small-size);
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+
+    position: absolute;
+    bottom: 0;
+}
+
+/*------ presentation style -------*/
+.presentation {
+    display: grid;
+    grid-template-areas: "image" "title" "desc";
+    margin-bottom: var(--large-size);
+}
+
+.presentation img {
+    grid-area: image;
+}
+
+.presentation h2 {
+    padding: var(--small-size) var(--small-size) 0px var(--small-size);
+    grid-area: title;
+}
+
+.presentation table {
+    font-size: var(--small-size);
+    padding: var(--small-size);
+    grid-area: desc;
+}
+
+.presentation td {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.presentation td:first-child {
+    padding: 10px;
+    border-right: 1px solid #eee;
+}
+
+.presentation caption {
+    caption-side: bottom;
+}
+
+/*------ Health Info Cards style -------*/
+.health-info-cards {
+    margin-bottom: var(--small-size);
+}
+
+.health-info-cards h2 {
+    padding: var(--small-size) var(--small-size) 0px var(--small-size);
+}
+
+.health-info-cards .card {
+    display: grid;
+    grid-template-areas: "image" "title" "desc" "button";
+    box-shadow: 1px 1px 10px #eee;
+    margin: var(--small-size);
+}
+
+.health-info-cards .card img {
+    grid-area: image;
+    min-width: 100%;
+    height: auto;
+}
+
+.health-info-cards .card h3 {
+    padding: var(--small-size);
+    grid-area: title;
+}
+
+.health-info-cards .card p {
+    padding: var(--small-size);
+    font-size: var(--small-size);
+    text-align: justify;
+    grid-area: desc;
+}

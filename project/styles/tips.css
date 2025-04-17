@@ -1,0 +1,66 @@
+/*============= MAIN STYLING ======================*/
+.main-header {
+    background-color: var(--accent-color1);
+    padding: var(--large-size);
+    margin-bottom: var(--large-size);
+    text-align: center;
+}
+
+.main-header h1 {
+    font-size: var(--large-size);
+    padding: var(--small-size);
+}
+
+/*----- disease style --------*/
+.disease {
+    padding: var(--small-size);
+}
+
+.disease h2 {
+    padding-bottom: var(--small-size);
+}
+
+.stat-card {
+    padding: var(--large-size);
+    box-shadow: 1px 1px 10px #ddd;
+}
+
+.stat-card h3 {
+    text-align: center;
+    font-size: var(--large-size);
+}
+
+/*----- tips-card style --------*/
+.disease .tips-card {
+    display: grid;
+    grid-template-areas: "image" "title" "desc" "button";
+    box-shadow: 1px 1px 10px #ddd;
+}
+
+.disease .tips-card img {
+    grid-area: image;
+}
+
+.disease .tips-card h3 {
+    padding: var(--small-size);
+    grid-area: title;
+}
+
+.disease .tips-card ul {
+    text-align: justify;
+    padding: var(--small-size);
+    grid-area: desc;
+}
+
+.disease .tips-card ul li {
+    padding-bottom: var(--small-size);
+    border-bottom: 1px solid #eee;
+}
+
+.disease .tips-card ul li::before {
+    content: "✅";
+}
+
+
+
+/*----- malaria section style --------*/
