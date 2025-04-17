@@ -8,6 +8,7 @@
     --small-size: 1rem;
     --medium-size: 1.5rem;
     --large-size: 2rem;
+    --massive-size: 5rem;
 }
 
 * {
@@ -51,6 +52,44 @@ ul {
     padding: var(--small-size);
 }
 
+dialog {
+    position: fixed;
+    top: 50%;
+    left: 10%;
+    right: 10%;
+    width: 80%;
+    transform: translateY(-50%);
+    border-radius: 10px;
+    border: none;
+}
+
+#dialogBox div {
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 10px;
+}
+
+#dialogBox button {
+    border: none;
+    background-color: var(--accent-color);
+    padding: 0.5rem;
+    border-radius: 5px;
+    color: #FF0000;
+    font-weight: bold;
+}
+
+#dialogBox p {
+    line-height: 20px;
+    text-align: justify;
+    padding: 1rem;
+}
+
+::backdrop {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
 /*============= MENU STYLING ======================*/
 .logo {
     padding: var(--small-size);
@@ -85,7 +124,7 @@ nav a {
     display: none;
     text-align: center;
     padding: var(--small-size) 0px;
-    border-bottom: 1px solid var(--primary-color);
+    border-bottom: 1px solid #ddd;
     color: #000;
 }
 
@@ -97,6 +136,14 @@ nav a:hover {
 
 .open a {
     display: block;
+}
+
+/*============= MAIN STYLING ======================*/
+.main-header {
+    background-color: var(--accent-color1);
+    padding: var(--large-size);
+    margin-bottom: var(--large-size);
+    text-align: center;
 }
 
 /*============= FOOTER STYLING ======================*/

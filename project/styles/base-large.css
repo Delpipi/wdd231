@@ -1,0 +1,32 @@
+@media screen and (min-width: 321px) {
+
+    /*============= MENU STYLING ======================*/
+    header {
+        display: grid;
+        grid-template-columns: 200px auto;
+        align-items: center;
+        padding: 0px var(--large-size);
+        margin-bottom: var(--small-size);
+        box-shadow: 1px 5px 10px #eee;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    nav {
+        justify-self: end;
+        flex-direction: row;
+    }
+
+    nav a,
+    nav li {
+        display: inline-block;
+        width: 150px;
+    }
+
+    /*============= MAIN STYLING ======================*/
+    .main-header {
+        padding: var(--massive-size);
+    }
+}

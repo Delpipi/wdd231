@@ -1,0 +1,67 @@
+/*============= MAIN STYLING ======================*/
+.main-header h1 {
+    font-size: var(--large-size);
+    padding: var(--small-size);
+}
+
+.contactForm,
+.contactLocation {
+    box-shadow: 1px 1px 10px #ddd;
+    padding: var(--small-size);
+    margin: var(--small-size);
+}
+
+/*------contactLocation style-----*/
+.contactLocation h2,
+.contactLocation h3 {
+    padding-bottom: var(--small-size);
+}
+
+.contactLocation p {
+    padding-bottom: 0.5rem;
+}
+
+.contactLocation strong {
+    color: var(--primary-color);
+}
+
+.contactLocation a:hover {
+    box-shadow: 1px 1px 5px #ddd;
+}
+
+/*------contactForm style-----*/
+
+.contactForm h2 {
+    padding-bottom: var(--small-size);
+}
+
+#contactForm label {
+    display: block;
+    width: 100%;
+    font-size: 0.8rem;
+}
+
+#contactForm input[type="text"],
+#contactForm input[type="tel"],
+#contactForm input[type="email"],
+#contactForm textarea {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+#contactForm input[type="email"]:required,
+#contactForm textarea {
+    border-left: 2px solid #FF0000;
+}
+
+#contactForm input[type="submit"] {
+    display: inline-block;
+    border: none;
+    width: 100%;
+    padding: var(--small-size);
+    background-color: var(--primary-color);
+    color: #fff;
+    font-size: var(--small-size);
+}

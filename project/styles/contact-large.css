@@ -1,0 +1,21 @@
+@media screen and (min-width: 321px) {
+
+    /*============= MAIN STYLING ======================*/
+    main {
+        display: grid;
+        grid-template-areas: "header header" "contactForm contactLocation ";
+    }
+
+    .main-header {
+        grid-area: header;
+    }
+
+    .contactForm {
+        grid-area: contactForm;
+    }
+
+    .contactLocation {
+        grid-area: contactLocation;
+    }
+
+}

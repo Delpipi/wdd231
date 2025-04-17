@@ -1,0 +1,22 @@
+@media screen and (min-width: 321px) {
+
+    /*----- tips-card style --------*/
+    .disease .tips-card {
+        grid-template-areas: "image title" "image desc" "image button";
+    }
+
+    .disease .tips-card img {
+        grid-area: image;
+    }
+
+    .disease .tips-card h3 {
+        padding: var(--small-size);
+        grid-area: title;
+    }
+
+    .disease .tips-card ul {
+        text-align: justify;
+        padding: var(--small-size);
+        grid-area: desc;
+    }
+}
