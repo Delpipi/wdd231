@@ -1,9 +1,25 @@
 /*============= MAIN STYLING ======================*/
+#main-header {
+    margin: 0px;
+}
+
+#main-content {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.presentation,
+.health-info-cards {
+    padding: var(--small-size);
+}
+
+.presentation {
+    background-color: #eee;
+}
 
 /*------ hero style -------*/
 .hero {
     position: relative;
-    margin-bottom: var(--small-size);
 }
 
 .hero h1 {
@@ -20,8 +36,10 @@
 /*------ presentation style -------*/
 .presentation {
     display: grid;
+    grid-template-columns: 1fr;
     grid-template-areas: "image" "title" "desc";
-    margin-bottom: var(--large-size);
+    gap: var(--small-size);
+    align-items: stretch;
 }
 
 .presentation img {
@@ -29,24 +47,27 @@
 }
 
 .presentation h2 {
-    padding: var(--small-size) var(--small-size) 0px var(--small-size);
+    padding: 0px var(--small-size);
+    align-self: center;
+    justify-self: start;
     grid-area: title;
 }
 
 .presentation table {
     font-size: var(--small-size);
-    padding: var(--small-size);
+    padding: 0px var(--small-size);
     grid-area: desc;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+
 }
 
 .presentation td {
     padding: 10px;
-    border-bottom: 1px solid #eee;
 }
 
 .presentation td:first-child {
-    padding: 10px;
-    border-right: 1px solid #eee;
+    border-bottom: 1px solid #ddd;
 }
 
 .presentation caption {
@@ -55,34 +76,45 @@
 
 /*------ Health Info Cards style -------*/
 .health-info-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--small-size);
     margin-bottom: var(--small-size);
-}
-
-.health-info-cards h2 {
-    padding: var(--small-size) var(--small-size) 0px var(--small-size);
 }
 
 .health-info-cards .card {
     display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--small-size);
     grid-template-areas: "image" "title" "desc" "button";
     box-shadow: 1px 1px 10px #eee;
-    margin: var(--small-size);
 }
 
 .health-info-cards .card img {
     grid-area: image;
-    min-width: 100%;
-    height: auto;
 }
 
 .health-info-cards .card h3 {
-    padding: var(--small-size);
+    padding: 0px var(--small-size);
     grid-area: title;
 }
 
 .health-info-cards .card p {
-    padding: var(--small-size);
+    padding: 0px var(--small-size);
     font-size: var(--small-size);
     text-align: justify;
     grid-area: desc;
+}
+
+@media screen and (max-width: 320px) {
+    .presentation tr {
+        display: block;
+        margin-bottom: 16px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+    }
+
+    .presentation td {
+        display: block;
+    }
 }

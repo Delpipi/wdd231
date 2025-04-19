@@ -10,3 +10,16 @@ export const formattedDate = today.toLocaleDateString('en-US', {
     second: '2-digit',
     hour12: false
 });
+
+export function getWeekDateName(datetime) {
+    const today = new Date(datetime);
+    return today.toLocaleDateString('en-US', { weekday: "long" });
+}
+
+export function capitalizeWords(str) {
+    return str.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()).join(' ');
+}
+
+export function getMillisecondsInDay() {
+    return 1000 * 60 * 60 * 24;
+}

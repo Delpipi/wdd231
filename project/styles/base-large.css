@@ -24,9 +24,4 @@
         display: inline-block;
         width: 150px;
     }
-
-    /*============= MAIN STYLING ======================*/
-    .main-header {
-        padding: var(--massive-size);
-    }
 }

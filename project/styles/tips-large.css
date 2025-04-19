@@ -1,7 +1,19 @@
 @media screen and (min-width: 321px) {
+    #main-header {
+        padding: var(--massive-size);
+    }
+
+    #main-content {
+        padding: var(--massive-size);
+    }
+
+    #diseases {
+        gap: var(--large-size);
+    }
 
     /*----- tips-card style --------*/
     .disease .tips-card {
+        grid-template-columns: 1fr 1fr;
         grid-template-areas: "image title" "image desc" "image button";
     }
 

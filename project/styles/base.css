@@ -35,7 +35,7 @@ a {
 }
 
 .img-responsive {
-    max-width: 100%;
+    width: 100%;
     height: auto;
     object-fit: cover;
 }
@@ -118,8 +118,6 @@ nav {
     flex-direction: column;
 }
 
-
-
 nav a {
     display: none;
     text-align: center;
@@ -139,9 +137,7 @@ nav a:hover {
 }
 
 /*============= MAIN STYLING ======================*/
-.main-header {
-    background-color: var(--accent-color1);
-    padding: var(--large-size);
+#main-header {
     margin-bottom: var(--large-size);
     text-align: center;
 }

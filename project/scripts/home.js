@@ -1,3 +1,5 @@
+import { getMillisecondsInDay } from './utility.js';
+
 const visitDialog = document.querySelector('#dialogBox');
 const closeDialog = document.querySelector('#dialogBox button');
 const dialogMessage = document.querySelector('#dialogBox p');

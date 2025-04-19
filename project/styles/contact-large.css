@@ -1,21 +1,12 @@
 @media screen and (min-width: 321px) {
 
     /*============= MAIN STYLING ======================*/
-    main {
-        display: grid;
-        grid-template-areas: "header header" "contactForm contactLocation ";
+    #main-header {
+        padding: var(--massive-size);
     }
 
-    .main-header {
-        grid-area: header;
+    #main-content {
+        grid-template-columns: 1fr 1fr;
+        padding: var(--massive-size);
     }
-
-    .contactForm {
-        grid-area: contactForm;
-    }
-
-    .contactLocation {
-        grid-area: contactLocation;
-    }
-
 }

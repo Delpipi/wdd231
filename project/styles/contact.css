@@ -1,6 +1,18 @@
 /*============= MAIN STYLING ======================*/
-.main-header h1 {
+#main-header {
+    padding: var(--large-size);
+    background-color: var(--accent-color1);
+}
+
+#main-header h1 {
     font-size: var(--large-size);
+    padding: var(--small-size);
+}
+
+#main-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--small-size);
     padding: var(--small-size);
 }
 
@@ -8,7 +20,6 @@
 .contactLocation {
     box-shadow: 1px 1px 10px #ddd;
     padding: var(--small-size);
-    margin: var(--small-size);
 }
 
 /*------contactLocation style-----*/
@@ -18,7 +29,7 @@
 }
 
 .contactLocation p {
-    padding-bottom: 0.5rem;
+    padding-bottom: var(--small-size);
 }
 
 .contactLocation strong {

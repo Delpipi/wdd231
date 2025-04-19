@@ -1,32 +1,43 @@
 /*============= MAIN STYLING ======================*/
-.main-header h1 {
+#main-header {
+    background-color: var(--accent-color1);
+    padding: var(--large-size);
+}
+
+#main-header h1 {
     font-size: var(--large-size);
     padding: var(--small-size);
+}
+
+#main-content {
+    padding: var(--small-size);
+}
+
+#diseases {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--medium-size);
 }
 
 /*----- disease style --------*/
 .disease {
-    padding: var(--small-size);
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--small-size);
 }
 
-.disease h2 {
-    text-align: center;
-    padding-bottom: var(--small-size);
-}
-
-.stat-card {
-    text-align: center;
-    padding-bottom: var(--large-size);
-}
-
-.stat-card h3 {
-    font-size: var(--large-size);
+.stat strong {
+    font-size: 20px;
+    color: var(--primary-color);
 }
 
 /*----- tips-card style --------*/
 .disease .tips-card {
     display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--small-size);
     grid-template-areas: "image" "title" "desc" "button";
+    align-items: stretch;
     box-shadow: 1px 1px 10px #ddd;
 }
 
@@ -35,8 +46,8 @@
 }
 
 .disease .tips-card h3 {
-    padding: var(--small-size);
     grid-area: title;
+    padding: 0px var(--small-size);
 }
 
 .disease .tips-card ul {
