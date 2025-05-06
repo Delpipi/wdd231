@@ -9,7 +9,7 @@ const courses = [
         technology: [
             'Python'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'WDD',
@@ -46,7 +46,7 @@ const courses = [
         technology: [
             'C#'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'WDD',
@@ -73,6 +73,82 @@ const courses = [
             'HTML',
             'CSS',
             'JavaScript'
+        ],
+        completed: true
+    },
+    {
+        subject: 'ITM',
+        number: 111,
+        title: 'Introduction to Database',
+        credits: 3,
+        certificate: 'Web Development',
+        description: 'This course covers the basic elements of database management systems. It introduces students to the concepts of logical and physical relationships in a data model and the concepts of inner and outer joins. Students will use a computer aided software engineering (CASE) tool to design, create, and query a database.',
+        technology: [
+            'Mysql',
+            'MySQL Workbench',
+        ],
+        completed: true
+    },
+    {
+        subject: 'CSE',
+        number: 340,
+        title: 'Web Backend Development',
+        credits: 3,
+        certificate: 'Web Development',
+        description: 'This programming course focuses on constructing dynamic web sites using server-side languages, making use of databases and design patterns.',
+        technology: [
+            'Node.js',
+            'Express',
+            'Pnpm',
+            'EJS Template',
+            'Express EJS Layouts',
+            'PostgreSQL'
+        ],
+        completed: false
+    },
+    {
+        subject: 'WDD',
+        number: 330,
+        title: 'Frontend Web Development II',
+        credits: 3,
+        certificate: 'Web Development',
+        description: "This course dives deeper into building dynamic web applications using the power of pure JavaScript, HTML, CSS, and Node.js – no frameworks required! You'll gain a stronger foundation in web frontend development and learn how to create interactive user interfaces, handle data, consume APIs, manage a collaborative project, and build complete web applications from scratch in a team environment.",
+        technology: [
+            'HTML',
+            'CSS',
+            'JavaScript',
+            'Node.js'
+        ],
+        completed: false
+    },
+    {
+        subject: 'CSE',
+        number: 341,
+        title: 'Web Services',
+        credits: 3,
+        certificate: 'Web Development',
+        description: 'This course focuses on the backend development of dynamic, service-oriented web applications. Students will learn how to design and implement web services, how to interact with data storage, and how to use these tools to build functioning web applications.',
+        technology: [
+            'Rest Api',
+            'MongoDB',
+        ],
+        completed: false
+    },
+    {
+        subject: 'WDD',
+        number: 430,
+        title: 'Web Full-Stack Development',
+        credits: 3,
+        certificate: 'Web Development',
+        description: "This course will teach you how to design and build interactive web based applications using HTML, CSS, JavaScript, and a web development stack.",
+        technology: [
+            'HTML',
+            'CSS',
+            'JavaScript',
+            'MongoDB',
+            'Express',
+            'AngularJs',
+            'Node.js'
         ],
         completed: false
     }

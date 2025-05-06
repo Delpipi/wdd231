@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Axes 3D Demo</title>
+    <style>
+        body {
+            perspective: 800px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #f5f5f5;
+        }
+
+        .box {
+            width: 150px;
+            height: 150px;
+            background: #8e44ad;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            border-radius: 10px;
+            transition: transform 1s;
+            transform-style: preserve-3d;
+        }
+
+        .box.rotateX {
+            transform: rotateX(60deg);
+        }
+
+        .box.rotateY {
+            transform: rotateY(60deg);
+        }
+
+        .box.translateZ {
+            transform: translateZ(100px);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box" id="box">Boîte</div>
+
+    <script>
+        const box = document.getElementById('box');
+
+        // Teste les axes un par un
+        setTimeout(() => box.classList.add('rotateX'), 1000);      // Tourne sur X
+        setTimeout(() => box.classList.remove('rotateX'), 2500);
+        setTimeout(() => box.classList.add('rotateY'), 3000);      // Tourne sur Y
+        setTimeout(() => box.classList.remove('rotateY'), 4500);
+        setTimeout(() => box.classList.add('translateZ'), 5000);   // Avance vers toi
+    </script>
+
+</body>
+
+</html>

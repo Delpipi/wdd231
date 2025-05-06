@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Démo Transformations CSS</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px;
+            background: #f0f0f0;
+        }
+
+        .box {
+            width: 150px;
+            height: 150px;
+            background: #3498db;
+            margin: 20px;
+            transition: transform 0.6s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            border-radius: 10px;
+        }
+
+        .buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            max-width: 600px;
+        }
+
+        button {
+            padding: 8px 12px;
+            font-size: 14px;
+            cursor: pointer;
+            border: none;
+            background-color: #2ecc71;
+            color: white;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background-color: #27ae60;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Transformations CSS - Démo interactive</h2>
+    <div class="box" id="box">Box</div>
+
+    <div class="buttons">
+        <button onclick="apply('translateX(100px)')">translateX(100px)</button>
+        <button onclick="apply('translateY(50px)')">translateY(50px)</button>
+        <button onclick="apply('scale(1.5, 1.5)')">scale(1.5, 1.5)</button>
+        <button onclick="apply('scaleX(2)')">scaleX(2)</button>
+        <button onclick="apply('rotate(45deg)')">rotate(45deg)</button>
+        <button onclick="apply('skew(20deg, 10deg)')">skew(20°,10°)</button>
+        <button onclick="apply('rotateX(60deg)')">rotateX(60deg)</button>
+        <button onclick="apply('rotateY(60deg)')">rotateY(60deg)</button>
+        <button onclick="apply('translateZ(100px)')">translateZ(100px)</button>
+        <button onclick="apply('scale3d(1.2, 1.2, 1.2)')">scale3d</button>
+        <button onclick="reset()">Réinitialiser</button>
+    </div>
+
+    <script>
+        const box = document.getElementById('box');
+        function apply(transformValue) {
+            box.style.transform = transformValue;
+        }
+        function reset() {
+            box.style.transform = 'none';
+        }
+    </script>
+
+</body>
+
+</html>

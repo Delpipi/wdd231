@@ -127,10 +127,11 @@ main {
     padding: 1em;
 }
 
-main>h1 {
+main h1, .block-title {
     color: var(--primary-color);
     font-size: 1.5rem;
     font-weight: 400;
+    margin-bottom: 1rem;
 }
 
 /* ------- block 1 ---------*/
@@ -151,10 +152,35 @@ main>h1 {
 }
 
 /* ------- block 2 ---------*/
+.certificate-status{
+    margin-bottom: 0.5rem;
+}
+.certificate-status ul{
+    display: flex;
+    gap: 10px;
+}
+
+.certificate-status ul li span{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #000;
+}
+
+.certificate-status ul li span.completed{
+    background-color: var(--secondary-color);
+}
+
+.certificate-status ul li span.incomplete{
+    background-color: var(--accent-color);
+}
+
+
 .block2 .subject-nav {
     display: flex;
+    flex-wrap: wrap;
     gap: 5px;
-    justify-content: space-evenly;
+    justify-content: flex-start;
 
     border-bottom: 2px solid var(--accent-color);
     padding-bottom: 1em;
@@ -177,7 +203,6 @@ main>h1 {
 
 /*         course ---------*/
 .course {
-    border: 1px solid var(--primary-color);
     border-radius: 0.5em;
     margin-bottom: 1em;
 }
@@ -238,8 +263,9 @@ main>h1 {
 }
 
 #dialogBox .dialog-body h3 {
-    padding-top: 1em;
+    padding: 1rem 0px;
     color: var(--primary-color);
+    font-size: 1.5rem;
 }
 
 #dialogBox .dialog-body .credit {
@@ -256,11 +282,15 @@ main>h1 {
 }
 
 #dialogBox .dialog-body .tech {
-    padding: 0.5em;
+    padding: 0.5rem;
     border-top: 2px solid var(--accent-color);
 
     font-weight: bold;
     color: var(--primary-color);
+}
+
+#dialogBox .dialog-body .tech h4{
+    padding-bottom: 1rem;
 }
 
 #dialogBox .dialog-body .tech ul li::before {

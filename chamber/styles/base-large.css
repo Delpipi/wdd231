@@ -28,7 +28,7 @@
         grid-column: 1/2;
     }
 
-    header nav {
+    header nav ul {
         flex-direction: row;
         justify-content: end;
         grid-column: 2/3;

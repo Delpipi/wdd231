@@ -28,9 +28,15 @@
 
     main .block1 {
         display: grid;
-        grid-template-columns: 1fr 650px;
+        grid-template-columns: 60% 40%;
         gap: 10px;
         margin-bottom: 2em;
+    }
+
+    #certicateList {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
     }
 
     .block2 .subject-nav {
